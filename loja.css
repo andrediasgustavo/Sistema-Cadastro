@@ -1,0 +1,18 @@
+body {
+	padding-top: 50px;
+}
+.principal {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+#deslogar a:link,
+#deslogar a:visited,
+#deslogar a:hover,
+#deslogar a:active  {
+   text-decoration: none;
+   color: #fff;
+}
+h1{
+	padding-bottom: 20px;
+}

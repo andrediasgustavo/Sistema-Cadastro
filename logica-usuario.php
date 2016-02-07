@@ -13,7 +13,7 @@ function verificaUsuario(){
 	}
 }
 
-function usuarioLogado($email){
+function usuarioLogado(){
 	return $_SESSION["usuario_logado"];
 }
 

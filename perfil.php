@@ -1,4 +1,5 @@
 <?php 
+session_start();
 	require_once("cabecalho.php"); 
     require_once("logica-usuario.php");
 ?>
@@ -6,17 +7,13 @@
 <h1>Perfil</h1>
 <table class="table">
 
-<?php
-$usuario = listaUsuario($conexao, usuarioLogado());
-?>
-
 	<tr>
         <td>Nome</td>
-        <td><?=$usuario['nome']?></td>
+        <td><?= $_SESSION['username']?></td>
     </tr>
     <tr>
         <td>Email</td>
-        <td><?=$usuario['email']?></td>
+        <td><?= $_SESSION['useremail']?></td>
     </tr>
 
 

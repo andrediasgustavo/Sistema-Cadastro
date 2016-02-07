@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once("banco-usuario.php");
 require_once("logica-usuario.php");
 ?>
@@ -9,8 +10,8 @@ if($usuario == null){
 	header("Location: index.php");
 }else{
 	$_SESSION["success"] = "Usuario logado com sucesso.";
-	logaUsuario($usuario["nome"]);
+    $_SESSION["username"] = $usuario['nome'];
+    $_SESSION["useremail"] = $usuario['email'];
+	logaUsuario($usuario["email"]);
 	header("Location: index.php");
 }
-die();
-?>

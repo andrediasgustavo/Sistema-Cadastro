@@ -4,7 +4,7 @@
     require_once("logica-usuario.php");
 ?>
 
-<table class="table table-striped table-bordered">
+<table class="table table-bordered"> 
 
 <?php
 $produtos = listaProdutos($conexao);
@@ -18,11 +18,11 @@ foreach ($produtos as $produto) :
         <div class="mostra">
         <?php 
         if(usuarioEstaLogado()){ ?>
-           <td><a class="btn btn-primary" href="produto-altera-form.php?id=<?=$produto['id']?>">Alterar</a>
+           <td><a class="btn btn-primary btn-lg" href="produto-altera-form.php?id=<?=$produto['id']?>">Alterar</a>
             <td>
             	<form action="remove-produto.php" method="post">
             		<input type="hidden" name="id" value="<?=$produto['id']?>">
-            		<button class="btn btn-danger">Remover</button>
+            		<button class="btn btn-danger btn-lg">Remover</button>
             	</form>
             </td>
             <?php }else{ ?>

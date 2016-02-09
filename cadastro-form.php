@@ -11,7 +11,7 @@ require_once("logica-usuario.php");
 ?>
 
 <h1>Cadastre-se</h1>
-	<form action="cadastro.php" method="post" enctype="multipart/form-data">
+	<form action="cadastro.php" method="post">
 		<table class="table">
 			<tr>
 				<td>Nome</td>
@@ -26,11 +26,7 @@ require_once("logica-usuario.php");
 				<td><input class="form-control" type="password" name="senha"></td>
 			</tr>
 			<tr>
-				<td></td>
-				<td><input class="form-control" type="file" name="foto"></td>
-			</tr>
-			<tr>
-				<td><button class="btn btn-primary">Cadastre-se</button></td>
+				<td><button class="btn btn-primary btn-lg">Cadastre-se</button></td>
 			</tr>
 		</table>
 	</form>

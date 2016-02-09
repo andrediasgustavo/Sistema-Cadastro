@@ -7,13 +7,15 @@ error_reporting(E_ALL ^ E_NOTICE);
 <head>
 	<title>Loja</title>
 	<meta charset="UTF-8">
+	<link rel="icon" href="favicon.png">
 	<link href="css/bootstrap.css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="loja.css" rel="stylesheet" />
 </head>
 <body>
+
 	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="contaniner">
+		<div class="contaniner-fluid">
 			<div class="navbar-header"><a href="index.php" class="navbar-brand">Minha Loja</a></div>
 		</div>
 		<div>
@@ -25,12 +27,13 @@ error_reporting(E_ALL ^ E_NOTICE);
 			</ul>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="principal">
 
 <?php
 
  mostraAlerta("success");
  mostraAlerta("danger");
+ mostraAlerta("muted");
 
  ?>

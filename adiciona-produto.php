@@ -18,12 +18,12 @@ else{
 	$usado = "false";
 }
 if(insereProduto($conexao, $nome, $preco, $descricao, $categoria_id, $usado)){ ?>
-<p class="text-success">Produto <?= $nome; ?>, <?= $preco; ?> adicionado com sucesso.</p>
+<p>Produto <?= $nome; ?>, <?= $preco; ?> adicionado com sucesso.</p>
 <?php 
 }else{ 
 	$msg = mysqli_error($conexao);
 ?>
-	<p class="text-danger">Produto <?= $nome; ?>, não foi adicionado: <?= $msg ?></p>
+	<p>Produto <?= $nome; ?>, não foi adicionado: <?= $msg ?></p>
 <?php
 }
 ?>

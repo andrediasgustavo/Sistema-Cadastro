@@ -10,13 +10,13 @@ $usado = "";
 $categorias = listaCategoria($conexao);
 
 ?>
-	<h1>Formulario de Cadastro</h1>
+	<h1>Formulário de Cadastro</h1>
 	<form action="adiciona-produto.php" method="post">
 		<table class="table">
         
-            <?php require("produto-formulario-base.php"); ?>
+            <?php require_once("produto-formulario-base.php"); ?>
             <tr>
-                <td><button class="btn btn-primary" type="submit">Cadastrar</button></td>
+                <td><button class="btn btn-primary btn-lg" type="submit">Cadastrar</button></td>
             </tr>
 
         </table>

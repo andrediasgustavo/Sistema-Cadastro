@@ -17,7 +17,7 @@ $categorias = listaCategoria($conexao);
            <?php require_once("produto-formulario-base.php"); ?>
 
             <tr>
-                <td><button class="btn btn-primary" type="submit">Alterar</button></td>
+                <td><button class="btn btn-primary btn-lg" type="submit">Alterar</button></td>
             </tr>
 
         </table>

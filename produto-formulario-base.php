@@ -31,7 +31,7 @@
                             $essaEhACategoria = $produto['categoria_id'] == $categoria['id'];
                             $selecao = $essaEhACategoria ? "selected='selected'" : "";
                             ?>
-                            <option value="<?=$categoria['id']?>" <?=$selecao?>>
+                            <option class="option" value="<?=$categoria['id']?>" <?=$selecao?>>
                                 <?=$categoria['nome']?><br/>
                             </option>
                         <?php endforeach ?>

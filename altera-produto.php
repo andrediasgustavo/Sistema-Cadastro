@@ -16,12 +16,12 @@ else{
 	$usado = "false";
 }
 if(alteraProduto($conexao, $id, $nome, $preco, $descricao, $categoria_id, $usado)){ ?>
-	<p class="text-success">Produto <?= $nome; ?>, <?= $preco; ?> foi alterado com sucesso.</p>
+	<p>Produto <?= $nome; ?>, <?= $preco; ?> foi alterado com sucesso.</p>
 <?php 
 }else{ 
 	$msg = mysqli_error($conexao);
 ?>
-	<p class="text-danger">Produto <?= $nome; ?>, não foi alterado: <?= $msg ?></p>
+	<p>Produto <?= $nome; ?>, não foi alterado: <?= $msg ?></p>
 <?php
 }
 ?>
